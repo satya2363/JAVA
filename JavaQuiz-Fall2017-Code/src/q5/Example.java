@@ -1,4 +1,4 @@
-package q5;
+ package q5;
 
 
 interface I {
@@ -26,9 +26,9 @@ class B implements I {
 class Example {
 	public static void main(String[] args){
 		I x = new A();
-		x.foo().bar();
+		x.foo().bar(); // B.bar()
 		I y = new B();
-		y.foo().bar();
+		y.foo().bar(); // B.bar
 		
 	}
 }
